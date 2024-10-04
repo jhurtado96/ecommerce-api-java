@@ -29,20 +29,22 @@ Aplicación Spring Boot para gestionar y consultar precios de productos en una t
    git clone <https://github.com/jhurtado96/ecommerce-api-java.git>
    cd ecommerce-prices
    
-
 2. **Instalar dependencias**:
 
    ```bash
    mvn clean install
-
- 
 
 3. **Ejecuta el proyecto**:
 
    ```bash
    mvn spring-boot:run
 
- 
+3. **Ejecutar test**:
+
+   ```bash
+   mvn test
+
+  
 ## Swagger
 
 <http://localhost:8080/swagger-ui/index.html>
