@@ -102,4 +102,25 @@ class PriceControllerIntegrationTest {
                 .statusCode(400)
                 .body(equalTo("Missing required parameter"));
     }
+
+    @Test
+    void testWelcome() {
+        given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get("/")
+                .then()
+                .statusCode(200)
+                .body(equalTo("Welcome to the ecommerce"));
+    }
+
+    @Test
+    void testError() {
+        given()
+                .contentType(ContentType.JSON)
+                .when()
+                .get("/error")
+                .then()
+                .statusCode(500);
+    }
 }

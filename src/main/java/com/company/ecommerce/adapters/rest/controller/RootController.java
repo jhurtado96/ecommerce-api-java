@@ -12,6 +12,6 @@ public class RootController {
 	@Operation(summary = "Binvenida a la app")
     @GetMapping
 	public String welcome() {
-        return "Bienvenido al ecommerce";
+        return "Welcome to the ecommerce";
     }
 }
